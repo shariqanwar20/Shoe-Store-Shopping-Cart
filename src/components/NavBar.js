@@ -1,24 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Home } from "./Home";
 
+import logo from '../images/logo.png'
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import { Products } from './Products';
+
+import { Home } from './Home';
+import MenuDrawer from './MenuDrawer';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    backgroundColor: 'white',
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(0.5),
   },
   title: {
-    flexGrow: 0.05,
-    textDecoration: 'none',
-    color: 'white',
+    flexGrow: 1,
   },
 }));
 
@@ -27,18 +27,12 @@ export default function NavBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" style={{backgroundColor: 'white'}}>
         <Toolbar>
           <Link to="/" element={<Home />} className={classes.title}>
-            <Typography variant="h6" >
-              Home
-            </Typography>
+            <img src={logo} alt="logo" width="128px" />
           </Link>
-          <Link to="products" element={<Products />} className={classes.title}>
-            <Typography variant="h6" >
-              Products
-            </Typography>
-          </Link>
+          <MenuDrawer />
         </Toolbar>
       </AppBar>
     </div>
