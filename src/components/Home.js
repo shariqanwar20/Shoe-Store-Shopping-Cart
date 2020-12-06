@@ -7,12 +7,11 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 
-import mensShoes from '../images/Lunar2.png'
-import womenShoes from '../images/WomenShoes.png'
-
 import { Link } from 'react-router-dom';
 import { Products } from './Products';
 
+const menShoe = "https://i.insider.com/5ad60080146e712d008b4ba3?width=1136&format=jpeg"
+const womenShoe = "https://girottishoes.com/media/wysiwyg/750x427-category-top-banner-women-shoes-2020-m.jpg";
 const useStyles = makeStyles({
   heading: {
     textAlign: 'center',
@@ -45,7 +44,7 @@ export const Home = () => {
                             component="img"
                             alt="Men's Shoes"
                             height="140"
-                            image={mensShoes}
+                            image={menShoe}
                             title="Men's Shoes"
                         />
                         <CardContent>
@@ -64,7 +63,7 @@ export const Home = () => {
                             component="img"
                             alt="Women's Shoes"
                             height="140px"
-                            image={womenShoes}
+                            image={womenShoe}
                             title="Women's Shoes"
                         />
                         <CardContent>
