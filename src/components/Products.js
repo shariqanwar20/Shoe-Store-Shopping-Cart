@@ -21,7 +21,6 @@ const useStyles = makeStyles({
       maxWidth: 250,
       backgroundColor: 'aliceblue',
       margin: 'auto',
-      marginLeft: '60px',
       marginBottom: '20px',
       marginTop: '20px',
     },
