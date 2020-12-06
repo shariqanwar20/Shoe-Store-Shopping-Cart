@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 export const Home = () => {
     const classes = useStyles();
     return (
-        <div>
+        <div className="home-div">
             <br />
             <Typography variant="h3" gutterBottom className={classes.heading}>
                 Shoe Store

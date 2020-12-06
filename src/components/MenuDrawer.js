@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import HomeIcon from '@material-ui/icons/Home';
 import AccessibilityIcon from '@material-ui/icons/Accessibility';
@@ -14,6 +13,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
 import { Home } from './Home';
 import { Products } from './Products';
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   list: {
@@ -31,13 +31,21 @@ const useStyles = makeStyles((theme) => ({
     color: 'primary',
   },
   link: {
-    textDecoration: 'none', 
+    textDecoration: 'none',
+    display: 'flex',
+    flexWrap: 'wrap', 
+  },
+  drawerTypo: {
     fontSize: "1rem", 
     fontFamily: "Roboto", 
     lineHeight: "1.5", 
     fontWeight: "400", 
     letterSpacing: "0.00938em",
     color: "rgba(0, 0, 0, 0.87)",
+  },
+
+  drawerList: {
+    marginLeft: '20px',
   }
 }));
 
@@ -64,22 +72,18 @@ export default function MenuDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
-        <ListItem button>
+      <List className={classes.drawerList}>
+        <Link to="/" element={<Home />} className={classes.link} >
           <ListItemIcon><HomeIcon /></ListItemIcon>
-          <Link to="/" element={<Home />} className={classes.link}>
-            Home
-          </Link>
-        </ListItem>
+          <Typography variant="subtitle2" className={classes.drawerTypo}>Home</Typography>
+        </Link>
       </List>
       <Divider />
-      <List>
-        <ListItem button>
+      <List className={classes.drawerList}>
+        <Link to="products" element={<Products />} className={classes.link}>
         <ListItemIcon><AccessibilityIcon /></ListItemIcon>
-          <Link to="products" element={<Products />} className={classes.link}>
-            Men's Shoes
-          </Link>
-        </ListItem>
+        <Typography variant="subtitle2" className={classes.drawerTypo}>Men's Shoes</Typography>
+        </Link>
       </List>
     </div>
   );

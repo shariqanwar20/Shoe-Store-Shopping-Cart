@@ -11,6 +11,16 @@
   margin-left: 60px;
 }
 
-body {
-  background-image: "./images/bg.jpg";
+.home-div {
+  background-image: url(./images/bg.jpg);
+  position: absolute;
+  height: 89.1%;
+  width: 100%;
+}
+
+.price-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-right: 147px;
 }
