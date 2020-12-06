@@ -8,6 +8,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 
 import mensShoes from '../images/Lunar2.png'
+import womenShoes from '../images/WomenShoes.png'
+
 import { Link } from 'react-router-dom';
 import { Products } from './Products';
 
@@ -49,6 +51,25 @@ export const Home = () => {
                         <CardContent>
                             <Typography gutterBottom variant="h5" style={{textAlign: 'center', fontWeight: 'bold'}}>
                                 Men
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Link>
+            <br/>
+            <Link to="products" element={<Products />} style={{textDecoration: 'none',}}>
+                <Card className={classes.root}>
+                    <CardActionArea>
+                        <CardMedia
+                            component="img"
+                            alt="Women's Shoes"
+                            height="140px"
+                            image={womenShoes}
+                            title="Women's Shoes"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" style={{textAlign: 'center', fontWeight: 'bold'}}>
+                                Women
                             </Typography>
                         </CardContent>
                     </CardActionArea>
