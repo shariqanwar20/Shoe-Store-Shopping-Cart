@@ -1,62 +1,50 @@
 {
     "air-jordan-3-valor-blue": {
+      "id": "air-jordan-3-valor-blue",
       "name": "NIKE VALOUR BLUE",
       "img":
         "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1",
-      "price": "$350"
+      "price": "$350",
+      "quantity": 1
     },
     "jordan-mars-270-london": {
+      "id": "jordan-mars-270-london",
       "name": "JORDAN MARS 270 LONDON",
       "img":
         "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1",
-      "price": "$150"
+      "price": "$150",
+      "quantity":1
     },
     "air-jordan-1-zoom-racer-blue": {
+      "id": "air-jordan-1-zoom-racer-blue",
       "name": "JORDAN RACER BLUE",
       "img":
         "https://secure-images.nike.com/is/image/DotCom/CK6637_104_A_PREM?$SNKRS_COVER_WD$&align=0,1",
-      "price": "$160"
+      "price": "$160",
+      "quantity": 1
     },
     "air-jordan-3-valor-blue1": {
+      "id": "air-jordan-3-valor-blue1",
       "name": "NIKE VALOUR BLUE",
       "img":
         "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1",
-      "price": "$350"
+      "price": "$350",
+      "quantity": 1
     },
-    "jordan-mars-270-london2": {
+    "jordan-mars-270-london1": {
+      "id": "jordan-mars-270-london1",
       "name": "JORDAN MARS 270 LONDON",
       "img":
         "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1",
-      "price": "$150"
+      "price": "$150",
+      "quantity": 1
     },
-    "air-jordan-1-zoom-racer-blue3": {
+    "air-jordan-1-zoom-racer-blue1": {
+      "id": "air-jordan-1-zoom-racer-blue1",
       "name": "JORDAN RACER BLUE",
       "img":
         "https://secure-images.nike.com/is/image/DotCom/CK6637_104_A_PREM?$SNKRS_COVER_WD$&align=0,1",
-      "price": "$160"
-    },
-    "jordan-mars-270-london3": {
-      "name": "JORDAN MARS 270 LONDON",
-      "img":
-        "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1",
-      "price": "$150"
-    },
-    "air-jordan-3-valor-blue2": {
-      "name": "NIKE VALOUR BLUE",
-      "img":
-        "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1",
-      "price": "$350"
-    },
-    "jordan-mars-270-london4": {
-      "name": "JORDAN MARS 270 LONDON",
-      "img":
-        "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1",
-      "price": "$150"
-    },
-    "air-jordan-3-valor-blue3": {
-      "name": "NIKE VALOUR BLUE",
-      "img":
-        "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1",
-      "price": "$350"
+      "price": "$160",
+      "quantity": 1
     }
   }
