@@ -24,3 +24,30 @@
   align-content: space-between;
   margin-right: 147px;
 }
+
+.navLink {
+  padding: 5px;
+  color: rgb(180, 175, 175);
+}
+.navLink:hover {
+  text-decoration: none;
+  color: white;
+}
+.active {
+  color: white;
+}
+.dot {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: red;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-nav {
+  flex-direction: row !important;
+}

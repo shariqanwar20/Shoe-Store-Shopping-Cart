@@ -3,6 +3,7 @@ import { Home } from "./components/Home";
 import { Products } from "./components/Products";
 import { ProductItem } from "./components/ProductItem";
 import { ShoppingCart } from "./components/ShoppingCart";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const { Routes, Route } = require("react-router-dom");
 
@@ -20,8 +21,10 @@ function App() {
             <ProductItem />
           </Route>
         </Route>
+        <Route path="/cart">
+          <ShoppingCart />
+        </Route>
       </Routes>
-      <ShoppingCart />
     </div>
   );
 }
